@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+    <script scr="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="tasks">
+            <div>
+                <a href="/">Home Back</a>
+                <form action="/edit" method="post">
+                    <input class="title" type="text" placeholder="Previous Title" name="prev_title" value="<%= filename %>">
+                    <input class="title" type="text" placeholder="New Title" name="new_title" >
+                    <input class="button" type="submit" value="Update Task">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
